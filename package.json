@@ -1,0 +1,30 @@
+{
+    "name": "datatables.net-autofill-se",
+    "version": "2.1.3",
+    "description": "AutoFill for DataTables with styling for [Semantic UI](http://semantic-ui.com/)",
+    "files": [
+        "js/autoFill.semanticui.js",
+        "css/autoFill.semanticui.css"
+    ],
+    "main": "./js/autoFill.semanticui.js",
+    "keywords": [
+        "autofill",
+        "excel",
+        "DataTables",
+        "jQuery",
+        "table",
+        "Semantic UI"
+    ],
+    "homepage": "https://datatables.net",
+    "bugs": "https://datatables.net/forums",
+    "license": "MIT",
+    "author": {
+        "name": "SpryMedia Ltd",
+        "url": "http://datatables.net"
+    },
+    "dependencies": {
+        "jquery": ">=1.7",
+        "datatables.net-se": ">=1.10.13",
+        "datatables.net-autofill": ">=2.1.3"
+    }
+}
