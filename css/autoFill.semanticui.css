@@ -4,14 +4,14 @@ div.dt-autofill-handle {
   width: 8px;
   z-index: 102;
   box-sizing: border-box;
-  border: 1px solid #888;
-  background: #888;
+  border: 1px solid #888888;
+  background: #888888;
 }
 
 div.dt-autofill-select {
   position: absolute;
   z-index: 1001;
-  background-color: #888;
+  background-color: #888888;
   background-image: repeating-linear-gradient(45deg, transparent, transparent 5px, rgba(255, 255, 255, 0.5) 5px, rgba(255, 255, 255, 0.5) 10px);
 }
 div.dt-autofill-select.top, div.dt-autofill-select.bottom {
