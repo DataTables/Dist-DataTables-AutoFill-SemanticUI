@@ -3,8 +3,8 @@
     "version": "2.2.1",
     "description": "AutoFill for DataTables with styling for [Semantic UI](http://semantic-ui.com/)",
     "files": [
-        "js/autoFill.semanticui.js",
-        "css/autoFill.semanticui.css"
+        "css/**/*.css",
+        "js/**/*.js"
     ],
     "main": "./js/autoFill.semanticui.js",
     "keywords": [
