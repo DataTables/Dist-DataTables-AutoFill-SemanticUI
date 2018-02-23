@@ -6,7 +6,7 @@
         "css/**/*.css",
         "js/**/*.js"
     ],
-    "main": "./js/autoFill.semanticui.js",
+    "main": "js/autoFill.semanticui.js",
     "keywords": [
         "autofill",
         "excel",
@@ -26,5 +26,6 @@
         "jquery": ">=1.7",
         "datatables.net-se": "^1.10.15",
         "datatables.net-autofill": "2.2.2"
-    }
+    },
+    "style": "css/autoFill.semanticui.css"
 }
