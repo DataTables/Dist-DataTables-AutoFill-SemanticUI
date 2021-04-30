@@ -1,6 +1,6 @@
 {
     "name": "datatables.net-autofill-se",
-    "version": "2.3.5",
+    "version": "2.3.6",
     "description": "AutoFill for DataTables with styling for [Semantic UI](http://semantic-ui.com/)",
     "files": [
         "css/**/*.css",
@@ -25,7 +25,7 @@
     "dependencies": {
         "jquery": ">=1.7",
         "datatables.net-se": "^1.10.15",
-        "datatables.net-autofill": "2.3.5"
+        "datatables.net-autofill": "2.3.6"
     },
     "style": "css/autoFill.semanticui.css"
 }
