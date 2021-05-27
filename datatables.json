@@ -1,13 +1,15 @@
 {
-    "css": [
-        "css/autoFill.semanticui.css",
-        "css/autoFill.semanticui.min.css"
-    ],
     "js": [
         "js/autoFill.semanticui.js",
         "js/autoFill.semanticui.min.js"
     ],
+    "css": [
+        "css/autoFill.semanticui.css",
+        "css/autoFill.semanticui.min.css"
+    ],
+    "types": [
+        "types/autoFill.semanticUI.d.ts"
+    ],
     "src-repo": "http://github.com/DataTables/AutoFill",
-    "last-sync": "732a5104554a56fc25db46a6cd5e342980ea6e4a",
     "last-tag": "2.3.6"
 }
