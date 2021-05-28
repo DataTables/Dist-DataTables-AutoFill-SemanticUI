@@ -19,7 +19,7 @@ npm install datatables.net-autofill-se
 
 ```
 var $ = require( 'jquery' );
-var dt = require( 'datatables.net-autofill-se}' )( window, $ );
+var dt = require( 'datatables.net-autofill-se' )( window, $ );
 ```
 
 ### bower
