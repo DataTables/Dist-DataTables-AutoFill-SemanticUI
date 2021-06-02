@@ -10,7 +10,7 @@
         <license type="expression">MIT</license>
         <tags>AutoFill  Excel  Semantic  SemanticUI  Semantic UI  Datatables jQuery table</tags>
         <dependencies>
-            <dependency id="datatables.net-autofill" version=">=2.3.6"/>
+            <dependency id="datatables.net-autofill" version=">=2.3.7"/>
             <dependency id="datatables.net-se" version=">=1.10.24"/>
         </dependencies>
         <contentFiles>

@@ -1,6 +1,6 @@
 # AutoFill for DataTables with styling for [SemanticUI](https://semantic-ui.com/)
 
-This package contains a built distribution of the [AutoFill extension](https://datatables.net/extensions/AutoFill) for [DataTables](https://datatables.net/) with styling for [SemanticUI](https://semantic-ui.com/).
+This package contains a built distribution of the [AutoFill extension](https://datatables.net/extensions/autofill) for [DataTables](https://datatables.net/) with styling for [SemanticUI](https://semantic-ui.com/).
 
 AutoFill adds an Excel like data fill option to DataTables, allowing click and drag over cells, filling in information and incrementing numbers as needed.
 
