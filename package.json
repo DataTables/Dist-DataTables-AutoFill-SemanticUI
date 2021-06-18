@@ -4,17 +4,17 @@
     "main": "js/autoFill.semanticui.js",
     "style": "css/autoFill.semanticui.css",
     "types": "./types/autoFill.semanticUI.d.ts",
-    "version": "2.3.8",
+    "version": "2.3.7",
     "files": [
         "css/**/*.css",
         "js/**/*.js"
     ],
     "keywords": [
         "AutoFill",
-        "Excel",
+ "Excel",
         "Semantic",
-        "SemanticUI",
-        "Semantic UI",
+ "SemanticUI",
+ "Semantic UI",
         "Datatables",
         "jQuery",
         "table",
