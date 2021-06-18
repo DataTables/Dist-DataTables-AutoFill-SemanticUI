@@ -11,10 +11,10 @@
     ],
     "keywords": [
         "AutoFill",
-        "Excel",
+ "Excel",
         "Semantic",
-        "SemanticUI",
-        "Semantic UI",
+ "SemanticUI",
+ "Semantic UI",
         "Datatables",
         "jQuery",
         "table",
@@ -22,9 +22,9 @@
         "sort"
     ],
     "dependencies": {
-        "jquery": ">=1.7",
-        "datatables.net-se": "^1.10.15",
-        "datatables.net-autofill": "2.3.8"
+        "datatables.net-autofill": ">=2.3.8",
+        "datatables.net-se": ">=1.10.26-dev",
+        "jquery": ">=1.7"
     },
     "moduleType": [
         "globals",
