@@ -4,17 +4,18 @@
     "main": "js/autoFill.semanticui.js",
     "style": "css/autoFill.semanticui.css",
     "types": "./types/autoFill.semanticUI.d.ts",
-    "version": "2.3.9",
+    "version": "2.3.7",
     "files": [
         "css/**/*.css",
-        "js/**/*.js"
+        "js/**/*.js",
+        "types/**/*.d.ts"
     ],
     "keywords": [
         "AutoFill",
-        "Excel",
+ "Excel",
         "Semantic",
-        "SemanticUI",
-        "Semantic UI",
+ "SemanticUI",
+ "Semantic UI",
         "Datatables",
         "jQuery",
         "table",
@@ -23,7 +24,7 @@
     ],
     "dependencies": {
         "datatables.net-autofill": ">=2.3.7",
-        "datatables.net-se": ">=1.10.25",
+        "datatables.net-se": ">=1.11.3",
         "jquery": ">=1.7"
     },
     "moduleType": [
