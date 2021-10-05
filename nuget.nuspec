@@ -11,7 +11,7 @@
         <tags>AutoFill  Excel  Semantic  SemanticUI  Semantic UI  Datatables jQuery table</tags>
         <dependencies>
             <dependency id="datatables.net-autofill" version="2.3.7"/>
-            <dependency id="datatables.net-se" version="1.10.25"/>
+            <dependency id="datatables.net-se" version="1.11.3"/>
         </dependencies>
         <contentFiles>
             <files include="**/*" buildAction="Content"/>

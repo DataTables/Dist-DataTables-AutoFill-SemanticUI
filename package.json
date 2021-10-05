@@ -24,7 +24,7 @@
     ],
     "dependencies": {
         "datatables.net-autofill": ">=2.3.7",
-        "datatables.net-se": ">=1.10.25",
+        "datatables.net-se": ">=1.11.3",
         "jquery": ">=1.7"
     },
     "moduleType": [
