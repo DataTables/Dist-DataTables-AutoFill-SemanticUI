@@ -4,7 +4,7 @@
     "main": "js/autoFill.semanticui.js",
     "style": "css/autoFill.semanticui.css",
     "types": "./types/autoFill.semanticUI.d.ts",
-    "version": "2.3.7",
+    "version": "2.4.0",
     "files": [
         "css/**/*.css",
         "js/**/*.js",
@@ -23,8 +23,8 @@
         "sort"
     ],
     "dependencies": {
-        "datatables.net-autofill": ">=2.3.7",
-        "datatables.net-se": ">=1.11.5",
+        "datatables.net-autofill": ">=2.4.0",
+        "datatables.net-se": ">=1.12.1",
         "jquery": ">=1.7"
     },
     "moduleType": [
