@@ -2,12 +2,14 @@
     "name": "datatables.net-autofill-se",
     "description": "AutoFill for DataTables with styling for [SemanticUI](https://semantic-ui.com/)",
     "main": "js/autoFill.semanticui.js",
+    "module": "js/autoFill.semanticui.mjs",
     "style": "css/autoFill.semanticui.css",
     "types": "./types/autoFill.semanticUI.d.ts",
     "version": "2.4.0",
     "files": [
         "css/**/*.css",
         "js/**/*.js",
+        "js/**/*.mjs",
         "types/**/*.d.ts"
     ],
     "keywords": [
