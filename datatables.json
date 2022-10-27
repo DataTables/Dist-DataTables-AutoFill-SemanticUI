@@ -10,7 +10,8 @@
         "css/autoFill.semanticui.min.css"
     ],
     "types": [
-        "types/autoFill.semanticUI.d.ts"
+        "types/autoFill.semanticUI.d.ts",
+        "types/types.d.ts"
     ],
     "src-repo": "http://github.com/DataTables/AutoFill",
     "last-tag": "2.4.0"

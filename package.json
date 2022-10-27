@@ -4,7 +4,7 @@
     "main": "js/autoFill.semanticui.js",
     "module": "js/autoFill.semanticui.mjs",
     "style": "css/autoFill.semanticui.css",
-    "types": "./types/autoFill.semanticUI.d.ts",
+    "types": "./types/types.d.ts",
     "version": "2.4.0",
     "files": [
         "css/**/*.css",
