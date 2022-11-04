@@ -6,7 +6,7 @@
 (function( factory ){
 	if ( typeof define === 'function' && define.amd ) {
 		// AMD
-		define( [''], function ( $ ) {
+		define( ['jquery', 'datatables.net-se', 'datatables.net-autofill'], function ( $ ) {
 			return factory( $, window, document );
 		} );
 	}
@@ -19,8 +19,18 @@
 				root = window;
 			}
 
+			if ( ! $ ) {
+				$ = typeof window !== 'undefined' ? // jQuery's factory checks for a global window
+					require('jquery') :
+					require('jquery')( root );
+			}
+
 			if ( ! $.fn.dataTable ) {
-				require('')(root, $);
+				require('datatables.net-se')(root, $);
+			}
+
+			if ( ! $.fn.dataTable.AutoFill ) {
+				require('datatables.net-autofill')(root, $);
 			}
 
 
