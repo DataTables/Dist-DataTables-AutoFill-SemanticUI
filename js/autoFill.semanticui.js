@@ -1,4 +1,3 @@
-
 /*! Bootstrap integration for DataTables' AutoFill
  * ©2015 SpryMedia Ltd - datatables.net/license
  */
