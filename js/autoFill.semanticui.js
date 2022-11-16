@@ -32,7 +32,6 @@
 				require('datatables.net-autofill')(root, $);
 			}
 
-
 			return factory( $, root, root.document );
 		};
 	}
