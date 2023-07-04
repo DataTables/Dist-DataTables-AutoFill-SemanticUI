@@ -5,7 +5,7 @@
     "module": "js/autoFill.semanticui.mjs",
     "style": "css/autoFill.semanticui.css",
     "types": "./types/autoFill.semanticui.d.ts",
-    "version": "2.5.3",
+    "version": "2.6.0",
     "files": [
         "css/**/*.css",
         "js/**/*.js",
@@ -14,10 +14,10 @@
     ],
     "keywords": [
         "AutoFill",
- "Excel",
+        "Excel",
         "Semantic",
- "SemanticUI",
- "Semantic UI",
+        "SemanticUI",
+        "Semantic UI",
         "Datatables",
         "jQuery",
         "table",
