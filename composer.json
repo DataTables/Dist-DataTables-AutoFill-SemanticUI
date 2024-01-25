@@ -1,5 +1,4 @@
 {
-    "version": "2.4.0",
     "name": "datatables.net/datatables.net-autofill-se",
     "description": "AutoFill adds an Excel like data fill option to DataTables, allowing click and drag over cells, filling in information and incrementing numbers as needed. This is AutoFill for DataTables with styling for [SemanticUI](https://semantic-ui.com/)",
     "support": {
@@ -20,10 +19,10 @@
     "minimum-stability": "dev",
     "keywords": [
         "AutoFill",
- "Excel",
+        "Excel",
         "Semantic",
- "SemanticUI",
- "Semantic UI",
+        "SemanticUI",
+        "Semantic UI",
         "Datatables",
         "jQuery",
         "table"
