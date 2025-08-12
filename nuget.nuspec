@@ -10,8 +10,8 @@
         <license type="expression">MIT</license>
         <tags>AutoFill  Excel  Semantic  SemanticUI  Semantic UI  Datatables jQuery table</tags>
         <dependencies>
-            <dependency id="datatables.net-autofill" version="2.4.0"/>
-            <dependency id="datatables.net-se" version="1.12.1"/>
+            <dependency id="datatables.net-autofill" version="2.7.0"/>
+            <dependency id="datatables.net-se" version="2.3.2"/>
         </dependencies>
         <contentFiles>
             <files include="**/*" buildAction="Content"/>
@@ -22,6 +22,10 @@
         <file src="js/autoFill.semanticui.js" target="contentFiles\any\any\wwwroot\js"/>
         <file src="js/autoFill.semanticui.min.js" target="content\Scripts"/>
         <file src="js/autoFill.semanticui.min.js" target="contentFiles\any\any\wwwroot\js"/>
+        <file src="js/autoFill.semanticui.min.mjs" target="content\Scripts"/>
+        <file src="js/autoFill.semanticui.min.mjs" target="contentFiles\any\any\wwwroot\js"/>
+        <file src="js/autoFill.semanticui.mjs" target="content\Scripts"/>
+        <file src="js/autoFill.semanticui.mjs" target="contentFiles\any\any\wwwroot\js"/>
         <file src="css/autoFill.semanticui.css" target="content\Content"/>
         <file src="css/autoFill.semanticui.css" target="contentFiles\any\any\wwwroot\css"/>
         <file src="css/autoFill.semanticui.min.css" target="content\Content"/>
