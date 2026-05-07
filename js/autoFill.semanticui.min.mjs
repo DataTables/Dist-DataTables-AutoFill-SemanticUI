@@ -1,4 +1,4 @@
-/*! Bootstrap integration for DataTables' AutoFill
- * ©2015 SpryMedia Ltd - datatables.net/license
+/*! AutoFill Fomantic styling 3.0.0-beta.1 for DataTables
+ * Copyright (c) SpryMedia Ltd - datatables.net/license
  */
-import jQuery from"jquery";import DataTable from"datatables.net-se";import AutoFill from"datatables.net-autofill";let $=jQuery;DataTable.AutoFill.classes.btn="ui button";export default DataTable;
+import DataTable from"datatables.net-se";import AutoFill from"datatables.net-autofill";DataTable.AutoFill.classes.btn="ui button";export default DataTable;

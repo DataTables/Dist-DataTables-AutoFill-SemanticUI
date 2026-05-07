@@ -1,46 +1,119 @@
-div.dt-autofill-handle {
+:root {
+  --dtaf-handle_height: 10px;
+  --dtaf-handle_width: 10px;
+  --dtaf-handle_background: #3366ff;
+  --dtaf-handle_background-focus: #ff8b33;
+  --dtaf-handle_border: none;
+  --dtaf-handle_z-index: 10;
+  --dtaf-outline_background-color: #4989de;
+  --dtaf-outline_background-image: repeating-linear-gradient(45deg,
+  	transparent,
+  	transparent 5px,
+  	rgba(255,255,255,.2) 5px,
+  	rgba(255,255,255,.2) 10px
+  );
+  --dtaf-list_background: var(--dt-html_background);
+  --dtaf-list_box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+  --dtaf-list_border: none;
+  --dtaf-list_width: 500px;
+  --dtaf-list_border-radius: 0.75em;
+  --dtaf-list_padding-top-closeable: 2.5em;
+  --dtaf-option_margin: 1em 0;
+  --dtaf-option_padding: 1em;
+  --dtaf-option_border-radius: 0.5em;
+  --dtaf-option_color: inherit;
+  --dtaf-option_border: 1px solid rgba(0, 0, 0, 0.175);
+  --dtaf-option_background: #f6f6f6;
+  --dtaf-option_background-hover: #ebebeb;
+  --dtaf-close_background: transparent;
+  --dtaf-close_border: none;
+  --dtaf-background_background: radial-gradient(ellipse farthest-corner at center, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 100%);
+  --dtaf-background_z-index: 103;
+}
+
+:root.dark {
+  --dtaf-handle_background: rgb(110, 168, 254);
+  --dtaf-outline_background-color: #4989de;
+  --dtaf-outline_background-image: repeating-linear-gradient(45deg,
+  	transparent,
+  	transparent 5px,
+  	rgba(0,0,0,.2) 5px,
+  	rgba(0,0,0,.2) 10px
+  );
+  --dtaf-list_border: 1px solid rgba(255, 255, 255, 0.15);
+  --dtaf-option_color: inherit;
+  --dtaf-option_border: 1px solid rgba(255, 255, 255, 0.175);
+  --dtaf-option_background: rgb(47, 52, 56);
+  --dtaf-option_background-hover: rgb(64, 69, 73);
+}
+
+@media screen and (max-width: 767px) {
+  :root {
+    --dtaf-handle_height: 16px;
+    --dtaf-handle_width: 16px;
+  }
+  div.dtaf-list {
+    width: 90%;
+  }
+}
+div.dtaf-handle {
   position: absolute;
-  height: 10px;
-  width: 10px;
-  z-index: 10;
+  height: var(--dtaf-handle_height);
+  width: var(--dtaf-handle_width);
+  z-index: var(--dtaf-handle_z-index);
   box-sizing: border-box;
-  background: #888;
+  background: var(--dtaf-handle_background);
+  border: var(--dtaf-handle_border);
   cursor: pointer;
 }
 
-div.dtk-focus-alt div.dt-autofill-handle {
-  background: #ff8b33;
+div.dtk-focus-alt div.dtaf-handle {
+  background: var(--dtaf-handle_background-focus);
 }
 
-div.dt-autofill-select {
+div.dtaf-select {
   position: absolute;
   z-index: 1001;
-  background-color: #888;
-  background-image: repeating-linear-gradient(45deg, transparent, transparent 5px, rgba(255, 255, 255, 0.5) 5px, rgba(255, 255, 255, 0.5) 10px);
+  background-color: var(--dtaf-outline_background-color);
+  background-image: var(--dtaf-outline_background-image);
 }
-div.dt-autofill-select.top, div.dt-autofill-select.bottom {
+div.dtaf-select.top, div.dtaf-select.bottom {
   height: 3px;
   margin-top: -1px;
 }
-div.dt-autofill-select.left, div.dt-autofill-select.right {
+div.dtaf-select.left, div.dtaf-select.right {
   width: 3px;
   margin-left: -1px;
 }
 
-div.dt-autofill-list {
+div.dtaf-container {
+  display: flex;
   position: fixed;
-  top: 50%;
-  left: 50%;
-  width: 500px;
-  margin-left: -250px;
-  background-color: white;
-  border-radius: 0.75em;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--dtaf-background_background);
+  z-index: var(--dtaf-background_z-index);
+  justify-content: center;
+  align-items: center;
+}
+
+div.dtaf-list {
+  position: relative;
+  width: var(--dtaf-list_width);
+  background: var(--dtaf-list_background);
+  border: var(--dtaf-list_border);
+  border-radius: var(--dtaf-list_border-radius);
+  box-shadow: var(--dtaf-list_box-shadow);
   z-index: 104;
   box-sizing: border-box;
   padding: 2em;
 }
-div.dt-autofill-list div.dtaf-popover-close {
+div.dtaf-list.dtaf-list-closeable {
+  padding-top: var(--dtaf-list_padding-top-closeable);
+}
+div.dtaf-list button.dtaf-list-close {
   position: absolute;
   top: 6px;
   right: 6px;
@@ -50,82 +123,58 @@ div.dt-autofill-list div.dtaf-popover-close {
   border-radius: 3px;
   cursor: pointer;
   z-index: 12;
+  background: var(--dtaf-close_background);
+  border: var(--dtaf-close_border);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  opacity: 0.7;
 }
-div.dt-autofill-list > div.dt-autofill-list-items > button {
+div.dtaf-list button.dtaf-list-close:hover {
+  opacity: 1;
+}
+div.dtaf-list > div.dtaf-list-items > button {
   display: block;
   width: 100%;
-  margin: 1em 0;
-  padding: 1em;
-  border-radius: 0.5em;
-  border: 1px solid rgba(0, 0, 0, 0.175);
-  background-color: #f6f6f6;
+  margin: var(--dtaf-option_margin);
+  padding: var(--dtaf-option_padding);
+  border-radius: var(--dtaf-option_border-radius);
+  border: var(--dtaf-option_border);
+  background-color: var(--dtaf-option_background);
   text-align: left;
   cursor: pointer;
+  color: var(--dtaf-option_color);
 }
-div.dt-autofill-list > div.dt-autofill-list-items > button:hover {
-  background-color: #ebebeb;
+div.dtaf-list > div.dtaf-list-items > button:hover {
+  background-color: var(--dtaf-option_background-hover);
 }
-div.dt-autofill-list > div.dt-autofill-list-items > button:first-child {
+div.dtaf-list > div.dtaf-list-items > button:first-child {
   margin-top: 0;
 }
-div.dt-autofill-list > div.dt-autofill-list-items > button:last-child {
+div.dtaf-list > div.dtaf-list-items > button:last-child {
   margin-bottom: 0;
 }
-div.dt-autofill-list > div.dt-autofill-list-items > button input[type=number] {
+div.dtaf-list > div.dtaf-list-items > button input[type=number] {
   display: inline-block;
   box-sizing: border-box;
   padding: 6px;
   width: 70px;
   margin: -2px 0;
 }
-div.dt-autofill-list > div.dt-autofill-list-items > button span {
+div.dtaf-list > div.dtaf-list-items > button span {
   float: right;
 }
 
-div.dtaf-popover-closeable {
-  padding-top: 2.5em;
-}
-
-div.dt-autofill-background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  background: radial-gradient(ellipse farthest-corner at center, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 100%);
-  z-index: 103;
-}
-
-html.dark div.dt-autofill-handle {
-  background: rgb(110, 168, 254);
-}
-html.dark div.dt-autofill-select {
-  position: absolute;
-  z-index: 1001;
-  background-color: rgb(110, 168, 254);
-  background-image: repeating-linear-gradient(45deg, transparent, transparent 5px, rgba(0, 0, 0, 0.5) 5px, rgba(0, 0, 0, 0.5) 10px);
-}
-html.dark div.dt-autofill-list {
-  background-color: var(--dt-html-background);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-}
-html.dark div.dt-autofill-list button {
-  color: inherit;
-  border: 1px solid rgba(255, 255, 255, 0.175);
-  background-color: rgb(47, 52, 56);
-}
-html.dark div.dt-autofill-list button:hover {
-  background-color: rgb(64, 69, 73);
-}
-
-@media screen and (max-width: 767px) {
-  div.dt-autofill-handle {
-    height: 16px;
-    width: 16px;
-  }
-  div.dt-autofill-list {
-    width: 90%;
-    left: 74.5%;
-  }
+:root {
+  --dtaf-handle_border: 1px solid #888;
+  --dtaf-handle_background: #888;
+  --dtaf-handle_z-index: 11;
+  --dtaf-list_box-shadow: 1px 3px 3px 0 rgba(0,0,0,.2),1px 3px 15px 2px rgba(0,0,0,.2);
+  --dtaf-list_background: #fff;
+  --dtaf-list_border: none;
+  --dtaf-list_border-radius: .28571429rem;
+  --dtaf-list_padding-top-closeable: 3.5em;
+  --dtaf-outline_background-color: #888;
+  --dtaf-background_background: rgba(0,0,0,.85);
+  --dtaf-background_z-index: 1000;
 }
