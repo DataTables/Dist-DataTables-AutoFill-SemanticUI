@@ -1,4 +1,4 @@
-/*! AutoFill Fomantic styling 3.0.0-beta.1 for DataTables
+/*! AutoFill Fomantic styling 3.0.0 for DataTables
  * Copyright (c) SpryMedia Ltd - datatables.net/license
  */
 
