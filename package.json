@@ -5,7 +5,7 @@
     "module": "js/autoFill.semanticui.mjs",
     "style": "css/autoFill.semanticui.css",
     "types": "./types/autoFill.semanticui.d.ts",
-    "version": "3.0.0-beta.1",
+    "version": "3.0.0",
     "files": [
         "css/**/*.css",
         "js/**/*.js",
@@ -24,8 +24,8 @@
         "sort"
     ],
     "dependencies": {
-        "datatables.net-autofill": "3.0.0-beta.1",
-        "datatables.net-se": "3.0.0-0"
+        "datatables.net-autofill": "3.0.0",
+        "datatables.net-se": "^3"
     },
     "author": {
         "name": "SpryMedia Ltd",
