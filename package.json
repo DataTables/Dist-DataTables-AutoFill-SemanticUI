@@ -1,16 +1,15 @@
 {
     "name": "datatables.net-autofill-se",
     "description": "AutoFill for DataTables with styling for [SemanticUI](https://semantic-ui.com/)",
-    "main": "js/autoFill.semanticui.js",
-    "module": "js/autoFill.semanticui.mjs",
-    "style": "css/autoFill.semanticui.css",
+    "main": "./js/autoFill.semanticui.js",
+    "module": "./js/autoFill.semanticui.mjs",
+    "style": "./css/autoFill.semanticui.css",
     "types": "./types/autoFill.semanticui.d.ts",
     "version": "3.0.1",
     "files": [
-        "css/**/*.css",
-        "js/**/*.js",
-        "js/**/*.mjs",
-        "types/**/*.d.ts"
+        "js",
+        "css",
+        "types"
     ],
     "keywords": [
         "AutoFill",
@@ -37,5 +36,24 @@
     "repository": {
         "type": "git",
         "url": "git+https://github.com/DataTables/AutoFill.git"
-    }
+    },
+    "exports": {
+        ".": {
+            "types": "./types/autoFill.semanticui.d.ts",
+            "import": "./js/autoFill.semanticui.mjs",
+            "default": "./js/autoFill.semanticui.mjs",
+            "require": "./js/autoFill.semanticui.js"
+        },
+        "./js/*": "./js/*",
+        "./css": {
+            "types": "./types/css.d.ts",
+            "default": "./css/autoFill.semanticui.css"
+        },
+        "./css/*": {
+            "types": "./types/css.d.ts",
+            "default": "./css/*"
+        },
+        "./package.json": "./package.json"
+    },
+    "sideEffects": true
 }

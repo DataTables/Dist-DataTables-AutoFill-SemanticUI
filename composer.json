@@ -1,6 +1,6 @@
 {
     "name": "datatables.net/datatables.net-autofill-se",
-    "description": "AutoFill for DataTables with styling for [SemanticUI](https://semantic-ui.com/)",
+    "description": "AutoFill for DataTables with styling for SemanticUI",
     "support": {
         "forum": "https://datatables.net/forums",
         "source": "https://github.com/DataTables/Dist-DataTables-AutoFill-SemanticUI"
