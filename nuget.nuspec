@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
-        <version>3.1.0</version>
+        <version>3.1.1</version>
         <id>datatables.net-autofill-se</id>
         <description>This is AutoFill for DataTables with styling for [SemanticUI](https://semantic-ui.com/)</description>
         <repository type="git" url="https://github.com/DataTables/AutoFill"/>
@@ -10,7 +10,7 @@
         <license type="expression">MIT</license>
         <tags>AutoFill  Excel  Semantic  SemanticUI  Semantic UI  Datatables table</tags>
         <dependencies>
-            <dependency id="datatables.net-autofill" version="3.1.0"/>
+            <dependency id="datatables.net-autofill" version="3.1.1"/>
             <dependency id="datatables.net-se" version="^3.1"/>
         </dependencies>
         <contentFiles>
