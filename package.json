@@ -40,9 +40,10 @@
     "exports": {
         ".": {
             "types": "./types/autoFill.semanticui.d.ts",
+            "style": "./css/autoFill.semanticui.css",
             "import": "./js/autoFill.semanticui.mjs",
-            "default": "./js/autoFill.semanticui.mjs",
-            "require": "./js/autoFill.semanticui.js"
+            "require": "./js/autoFill.semanticui.js",
+            "default": "./js/autoFill.semanticui.mjs"
         },
         "./js/*": "./js/*",
         "./css": {
