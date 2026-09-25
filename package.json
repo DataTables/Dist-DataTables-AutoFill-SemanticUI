@@ -5,7 +5,7 @@
     "module": "./js/autoFill.semanticui.mjs",
     "style": "./css/autoFill.semanticui.css",
     "types": "./types/autoFill.semanticui.d.ts",
-    "version": "3.1.1",
+    "version": "3.1.2",
     "files": [
         "js",
         "css",
@@ -23,7 +23,7 @@
         "sort"
     ],
     "dependencies": {
-        "datatables.net-autofill": "3.1.1",
+        "datatables.net-autofill": "3.1.2",
         "datatables.net-se": "^3.1"
     },
     "author": {

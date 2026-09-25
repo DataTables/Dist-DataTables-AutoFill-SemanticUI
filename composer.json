@@ -28,7 +28,7 @@
         "table"
     ],
     "require": {
-        "datatables.net/datatables.net-autofill": "3.1.1",
+        "datatables.net/datatables.net-autofill": "3.1.2",
         "datatables.net/datatables.net-se": "^3.1"
     }
 }
